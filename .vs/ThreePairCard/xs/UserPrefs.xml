@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{F04FC573-B2DC-304B-0BFD-672F135C2824}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sikuthai/Script/StartGame.cs">
+    <Files>
+      <File FileName="Assets/Sikuthai/Script/SikuThiaGameController.cs" Line="962" Column="49" />
+      <File FileName="Assets/Sikuthai/Script/Card.cs" Line="9" Column="27" />
+      <File FileName="Assets/Sikuthai/Script/StartGame.cs" Line="24" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="21f083aa-d573-430b-8506-e5fa938346a4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
