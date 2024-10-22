@@ -1,3 +1,3 @@
-# SikuThai
+
 # ThreePairCard
 # ThreePairCard
