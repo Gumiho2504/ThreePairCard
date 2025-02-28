@@ -15,6 +15,7 @@ EditorBuildSettings:
     path: Assets/Sikuthai/Scenes/SikuThai.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5d92c3b82e983469cacf1218ea491c81, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: cc4542c6e8d364c1ba82b05c8d9e5c28, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: abfc50568cd094ab2a57f0b3510d3384, type: 3}
   m_UseUCBPForAssetBundles: 0

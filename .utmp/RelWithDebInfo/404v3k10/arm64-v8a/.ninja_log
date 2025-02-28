@@ -1,0 +1,23 @@
+# ninja log v5
+5	1735	1740725232693962207	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	4d58036b022ae9b8
+7	1440	1740725232394771660	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3320b769cf732293
+7	1662	1740725232621728834	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	92919ad8dd323d40
+9	1486	1740725232445404592	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7ea00cd1566d6a6
+6	1439	1740725232396005536	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	f9e1f013cf5e8952
+6	1421	1740725232378907476	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	7f22184b9ae598f9
+7	1397	1740725232353563363	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	a54269d6a652c9aa
+876	1346	1740725232306482268	/Users/macbook/Documents/Unity-Game/ThreePairCard/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/404v3k10/obj/arm64-v8a/libswappywrapper.so	c0394d8e6facfbcd
+6	1478	1740725232436889166	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3447a539c7049c74
+1735	1803	1740725232764006578	/Users/macbook/Documents/Unity-Game/ThreePairCard/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/404v3k10/obj/arm64-v8a/libgame.so	fdb5697310714e30
+9	876	1740725231828576144	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	bb9b408af6fafb16
+7	910	1740725642758169249	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	bb9b408af6fafb16
+910	1171	1740725643019682542	/Users/macbook/Documents/Unity-Game/ThreePairCard/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/404v3k10/obj/arm64-v8a/libswappywrapper.so	c0394d8e6facfbcd
+5	1395	1740725643247056780	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	a54269d6a652c9aa
+5	1422	1740725643275053024	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	7f22184b9ae598f9
+4	1433	1740725643287154517	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	f9e1f013cf5e8952
+6	1444	1740725643299225635	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3320b769cf732293
+4	1468	1740725643323362329	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3447a539c7049c74
+6	1477	1740725643332506795	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7ea00cd1566d6a6
+5	1642	1740725643495642726	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	92919ad8dd323d40
+3	1726	1740725643580938946	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	4d58036b022ae9b8
+1726	1789	1740725643646267862	/Users/macbook/Documents/Unity-Game/ThreePairCard/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/404v3k10/obj/arm64-v8a/libgame.so	fdb5697310714e30

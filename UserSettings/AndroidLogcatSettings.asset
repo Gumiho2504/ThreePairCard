@@ -1,13 +1,56 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "a78e59c6",
     "m_SelectedProcess": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "a78e59c6",
+        "name": "com.three.PairCard",
+        "processId": 23634,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownProcessesForSerialization": [],
+    "m_KnownProcessesForSerialization": [
+        {
+            "deviceId": "a78e59c6",
+            "name": "com.three.PairCard",
+            "processId": 13272,
+            "exited": false
+        },
+        {
+            "deviceId": "a78e59c6",
+            "name": "com.three.PairCard",
+            "processId": 15263,
+            "exited": false
+        },
+        {
+            "deviceId": "a78e59c6",
+            "name": "com.three.PairCard",
+            "processId": 15832,
+            "exited": false
+        },
+        {
+            "deviceId": "a78e59c6",
+            "name": "com.three.PairCard",
+            "processId": 16912,
+            "exited": false
+        },
+        {
+            "deviceId": "a78e59c6",
+            "name": "com.three.PairCard",
+            "processId": 17902,
+            "exited": false
+        },
+        {
+            "deviceId": "a78e59c6",
+            "name": "com.three.PairCard",
+            "processId": 21142,
+            "exited": false
+        },
+        {
+            "deviceId": "a78e59c6",
+            "name": "com.three.PairCard",
+            "processId": 23634,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -45,8 +88,19 @@
         "Height": 0.0
     },
     "m_MemoryViewerState": {
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "AutoCapture": true
     },
@@ -66,6 +120,17 @@
         "BitRateK": 20000,
         "DisplayIdEnabled": false,
         "DisplayId": ""
+    },
+    "m_ScreenCaptureSettings": {
+        "Mode": 0,
+        "m_LastSaveLocation": [
+            "/Users/macbook/Documents/Unity-Game/ThreePairCard",
+            "/Users/macbook/Documents/Unity-Game/ThreePairCard"
+        ]
+    },
+    "m_QueryLayoutSettings": {
+        "LastLayoutSaveLocation": "",
+        "LastScreenshotSaveLocation": ""
     },
     "m_InputSettings": {
         "ShiftModifier": false,

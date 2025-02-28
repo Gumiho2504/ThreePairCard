@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using GoogleMobileAds.Sample;
 //♠♣♦♥
 public class SikuThiaGameController : MonoBehaviour
 {
+    
     public static SikuThiaGameController instance ;
     public GameObject cardPrefab;
     public List<Sprite> suitsSprite = new List<Sprite>();
@@ -75,6 +77,7 @@ public class SikuThiaGameController : MonoBehaviour
 
     IEnumerator Start()
     {
+        
         coin = PlayerPrefs.GetInt("c", coin);
         if(coin < 0)
         {
@@ -85,12 +88,14 @@ public class SikuThiaGameController : MonoBehaviour
 
         UpdateTextUi();
         
+        //GoogleAdsMobManager.instance.interstitialAdController.ShowAd();
+        
         yield return InterSecGame();
     }
 
     IEnumerator InterSecGame()
     {
-        flushText.text = $"1FLUSH = {flush}$";
+        flushText.text = $"1FLUSH = {flush}";
         gameStateText.text = "you can change the flush before card deal in 3s";
         dropButton.interactable = drawnButton.interactable = eatButton.interactable = false;
         increasButton.interactable= discreasButton.interactable = true;
@@ -113,7 +118,7 @@ public class SikuThiaGameController : MonoBehaviour
 
     void UpdateTextUi()
     {
-        coinText.text = $"coin = {coin}$";
+        coinText.text = $"coin = {coin}";
 
         playerWinCountText.text = $"PLAYER WIN COUNT= {playerWinCount}";
         aiWinCoinText.text = $"AI WIN COUNT = {aiWinCount}";
@@ -1044,17 +1049,17 @@ public class SikuThiaGameController : MonoBehaviour
                     if (flush >= 8)
                     {
                         coin += this.flush * 10;
-                        gameStateText.text = who + $" win {10} flush \n FullRed you win {this.flush * 10}$";
+                        gameStateText.text = who + $" win {10} flush \n FullRed you win {this.flush * 10}";
                     }
                     else if (flush == 0)
                     {
                         coin += this.flush * 10;
-                        gameStateText.text = who + $" win {10} flush \n FullBlack you win {this.flush * 10}$";
+                        gameStateText.text = who + $" win {10} flush \n FullBlack you win {this.flush * 10}";
                     }
                     else
                     {
                         coin += this.flush * flush;
-                        gameStateText.text = who + $" win {flush} flush \n you win {this.flush * flush}$";
+                        gameStateText.text = who + $" win {flush} flush \n you win {this.flush * flush}";
                     }
 
                     AudioController.Instance.PlaySFX("win");
@@ -1082,7 +1087,7 @@ public class SikuThiaGameController : MonoBehaviour
                         {
                             coin -= this.flush * 10;
                         }
-                        gameStateText.text = who + $" win {10} flush \n FullRed you lose {this.flush * 10}$";
+                        gameStateText.text = who + $" win {10} flush \n FullRed you lose {this.flush * 10}";
                     }
                     else if (flush == 0)
                     {
@@ -1095,11 +1100,11 @@ public class SikuThiaGameController : MonoBehaviour
                         {
                             coin -= this.flush * 10;
                         }
-                        gameStateText.text = who + $" win {10} flush \n FullBlack you lose {this.flush * 10}$";
+                        gameStateText.text = who + $" win {10} flush \n FullBlack you lose {this.flush * 10}";
                     }
                     else
                     {
-                        gameStateText.text = who + $" win {flush} flush \n you lose -{this.flush * flush}$";
+                        gameStateText.text = who + $" win {flush} flush \n you lose -{this.flush * flush}";
                         if (coin < this.flush * flush)
                         {
                             coin = 0;
@@ -1160,9 +1165,12 @@ public class SikuThiaGameController : MonoBehaviour
         }
 
         playerCardDrop = dropCard =null;
+       
         yield return new WaitForSeconds(3f);
         endPanel.SetActive(false);
         isAiWin = false;
+       yield return new WaitForSeconds(1f);
+       //GoogleAdsMobManager.instance.rewardedInterstitialAdController.ShowAd();
         yield return InterSecGame();
     }
 
@@ -1264,6 +1272,6 @@ public class SikuThiaGameController : MonoBehaviour
 
                 break;
         }
-        flushText.text = $"1FLUSH = {flush}$";
+        flushText.text = $"1FLUSH = {flush}";
     }
 }
