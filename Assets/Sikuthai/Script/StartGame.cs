@@ -4,48 +4,51 @@ using System.Collections;
 using UnityEngine.UI;
 using GoogleMobileAds.Sample;
 using GoogleMobileAds.Api;
+using System;
 public class StartGame : MonoBehaviour
 {
+
     float progress = 0;
+    public Text userNameText, coinText, gemText;
     public Text loadingText;
+
     public GameObject loadingPanel;
 
-    public GameObject textLogoFirstGameobject,textLogoSecondGameobject;
+    public GameObject textLogoFirstGameobject, textLogoSecondGameobject;
+  
+    public GameObject settingPanel;
 
     IEnumerator Start()
     {
-        
+
         StartUpAnimation();
 
         yield return new WaitForSeconds(2f);
-        loadingPanel.LeanMoveLocalX(Screen.width*2f,1f).setEaseInOutBack();
-        // while (progress <= 100)
-        // {
-        //     progress += 90 * Time.deltaTime;
-        //     loadingText.text = "loading" + progress.ToString("0") + "%";
-        //     yield return null;
-        // }
-        // if (GoogleAdsMobManager.instance._isInitialized)
-        // {
-        //     //GoogleAdsMobManager.instance.rewardedInterstitialAdController.ShowAd();
-        //     loadingPanel.SetActive(false);
-        // }
+        loadingPanel.LeanMoveLocalX(Screen.width * 2f, 1f).setEaseInOutBack();
 
-
+       
     }
 
-    protected void StartUpAnimation(){
+    public  void UpdateTextUI(){
+        userNameText.text = FindAnyObjectByType<AuthInitialization>().user.name;
+        coinText.text = FindAnyObjectByType<AuthInitialization>().user.coin.ToString();
+        gemText.text = FindAnyObjectByType<AuthInitialization>().user.gem.ToString();
+    }
+
+    protected void StartUpAnimation()
+    {
         textLogoFirstGameobject
-            .LeanMoveLocalY(textLogoFirstGameobject.transform.position.y,1f)
+            .LeanMoveLocalY(textLogoFirstGameobject.transform.position.y, 1f)
             .setFrom(Screen.height + 100f)
             .setEaseInElastic()
-            .setOnComplete(() => {
+            .setOnComplete(() =>
+            {
                 textLogoSecondGameobject
-                    .LeanMoveLocalY(textLogoSecondGameobject.transform.position.y,1f)
+                    .LeanMoveLocalY(textLogoSecondGameobject.transform.position.y, 1f)
                     .setFrom(-Screen.height - 100f);
             })
             ;
-        
+
     }
 
     public void StartButton()
@@ -58,6 +61,14 @@ public class StartGame : MonoBehaviour
         Application.Quit();
     }
 
+
+    public void ShowSettingPanel()
+    {
+        settingPanel.SetActive(true);
+    }
+    public void HideSettingPanel(){
+        settingPanel.SetActive(false);
+    }
 
 
 }

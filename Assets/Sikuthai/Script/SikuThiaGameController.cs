@@ -79,6 +79,7 @@ public class SikuThiaGameController : MonoBehaviour
     {
         
         coin = PlayerPrefs.GetInt("c", coin);
+        coin = AuthInitialization.instance.user.coin;
         if(coin < 0)
         {
             coin = 10;
@@ -1118,6 +1119,7 @@ public class SikuThiaGameController : MonoBehaviour
 
                     break;
             }
+            AuthInitialization.instance.cloudSaveManager.SaveCoins(coin);
             PlayerPrefs.SetInt("c", coin);
             PlayerPrefs.SetInt("p", playerWinCount);
             PlayerPrefs.SetInt("a", aiWinCount);
